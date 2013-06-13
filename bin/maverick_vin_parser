@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'maverick_vin_parser'
+require 'json'
 
 if ARGV.length != 1
   puts 'usage: maverick_vin_parser VIN'
@@ -9,7 +10,7 @@ end
 
 
 begin
-  puts MaverickVinParser.new.parse(ARGV[0])
+  puts JSON.pretty_generate( MaverickVinParser.new.parse(ARGV[0]) )
 rescue MaverickVinParser::ArgumentError
   puts $!.message
 end
