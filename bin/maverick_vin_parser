@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+require 'maverick_vin_parser'
+
+if ARGV.length != 1
+  puts 'usage: maverick_vin_parser VIN'
+  exit(0)
+end
+
+
+begin
+  puts MaverickVinParser.new.parse(ARGV[0])
+rescue MaverickVinParser::ArgumentError
+  puts $!.message
+end
