@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'maverick_vin_parser'
-  s.version     = '1.1.2'
+  s.version     = '1.1.3'
   s.date        = '2013-06-12'
   s.summary     = 'VIN parser for Ford Mavericks'
   s.description = 'A parser for Vehicle Identification Numbers from Ford Mavericks and Mercury Comets 1970-77'
