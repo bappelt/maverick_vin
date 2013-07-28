@@ -32,7 +32,7 @@ class MaverickVinParser
           plant: PLANT_CODES[$2.to_sym],
           body: BODY_CODES[$3],
           engine: ENGINE_CODES[$4.to_sym],
-          unit_number: $5.to_i
+          unit_number: $5.to_i - 100000
       }
     end
 

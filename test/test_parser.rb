@@ -9,8 +9,8 @@ class ParserTest < Test::Unit::TestCase
   end
 
   def test_parser
-    assert_equal( {year: 1970, plant: 'St. Thomas', body: 'Maverick 2-Door Sedan Standard', engine: '170ci 6-Cylinder 1 bbl', unit_number: 100647},  @parser.parse('0X91U100647')  )
-    assert_equal( {year: 1974, plant: 'Kansas City', body: 'Maverick 2-Door Sedan Standard', engine: '250ci 6-Cylinder 1 bbl', unit_number: 125113},  @parser.parse('4K91L125113')  )
+    assert_equal( {year: 1970, plant: 'St. Thomas', body: 'Maverick 2-Door Sedan Standard', engine: '170ci 6-Cylinder 1 bbl', unit_number: 647},  @parser.parse('0X91U100647')  )
+    assert_equal( {year: 1974, plant: 'Kansas City', body: 'Maverick 2-Door Sedan Standard', engine: '250ci 6-Cylinder 1 bbl', unit_number: 25113},  @parser.parse('4K91L125113')  )
   end
 
   def test_invalid
