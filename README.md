@@ -6,10 +6,10 @@ Includes a command line utility:
 ```
 $ maverick_vin_parser 0X91U100647
 {
-  "year": 1974,
-  "plant": "Kansas City",
+  "year": 1970,
+  "plant": "St. Thomas",
   "body": "Maverick 2-Door Sedan Standard",
-  "engine": "250ci 6-Cylinder 1 bbl",
-  "unit_number": 125113
+  "engine": "170ci 6-Cylinder 1 bbl",
+  "unit_number": 647
 }
 ```
