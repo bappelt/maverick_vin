@@ -9,4 +9,5 @@ Gem::Specification.new do |s|
   s.files       = %w(lib/maverick_vin_parser.rb lib/vin_constants.rb)
   s.executables << 'maverick_vin_parser'
   s.homepage    = 'http://rubygems.org/gems/maverick_vin_parser'
+  s.license     = 'MIT'
 end
