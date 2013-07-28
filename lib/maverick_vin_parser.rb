@@ -27,13 +27,16 @@ class MaverickVinParser
   #
   def parse(vin)
     @regex_main.match(vin) do
-      return {
+
+      vehicle_hash = {
           year: 1970+$1.to_i,
           plant: PLANT_CODES[$2.to_sym],
           body: BODY_CODES[$3],
           engine: ENGINE_CODES[$4.to_sym],
-          unit_number: $5.to_i - 100000
       }
+      unit_number_origin = vehicle_hash[:body].include?('Maverick') ? UNIT_NUMBER_ORIGIN_FORD : UNIT_NUMBER_ORIGIN_MERCURY
+      vehicle_hash[:unit_number] = $5.to_i - unit_number_origin
+      return vehicle_hash
     end
 
 

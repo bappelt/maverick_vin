@@ -33,4 +33,7 @@ module VinConstants
                     F: '302ci 8-Cylinder 2 bbl'
                   }
 
+  UNIT_NUMBER_ORIGIN_FORD = 100000
+  UNIT_NUMBER_ORIGIN_MERCURY = 500000
+
 end
