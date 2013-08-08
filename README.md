@@ -13,3 +13,8 @@ $ maverick_vin_parser 0X91U100647
   "unit_number": 647
 }
 ```
+* [homepage](http://bappelt.github.io/maverick_vin/)
+* [RubyGems](http://rubygems.org/gems/maverick_vin_parser)
+* [RubyDoc](http://www.rubydoc.info/github/bappelt/maverick_vin/MaverickVinParser)
+* [CodeClimate](https://codeclimate.com/github/bappelt/maverick_vin)
+* [TravisCI](https://travis-ci.org/bappelt/maverick_vin)
