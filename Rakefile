@@ -21,8 +21,3 @@ end
 
 desc 'Run tests'
 task :default => :test
-
-task :cwd do
-  puts Dir.pwd
-  puts $:
-end
