@@ -5,6 +5,8 @@ require 'vin_constants'
 #
 class MaverickVinParser
 
+  VERSION = '1.1.4'
+
   include VinConstants
 
   ArgumentError = Class.new(ArgumentError)
