@@ -1,3 +1,5 @@
+$LOAD_PATH.unshift File.expand_path('../lib', __FILE__)
+require 'maverick_vin_parser'
 require 'rake/testtask'
 require 'bundler/version'
 
@@ -14,7 +16,7 @@ end
 
 desc 'Publish gem to Rubygems.org'
 task :release => :build do
-  system "gem push bundler-#{MaverickVinParser::VERSION}"
+  system "gem push maverick_vin_parser-#{MaverickVinParser::VERSION}.gem"
 end
 
 desc 'Run tests'
