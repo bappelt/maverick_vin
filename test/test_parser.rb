@@ -1,3 +1,6 @@
+require 'coveralls'
+Coveralls.wear!
+
 require 'test/unit'
 require 'maverick_vin_parser'
 require 'vin_constants'
